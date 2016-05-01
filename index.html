@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Test</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="lib/js/jquery-1.12.3.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class= "container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">E-Grossery</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">More Coming Soon</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="alert alert-info fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Limited time offer: </strong> Buy 2 Butter and get a Bread at 50% off
+        </div>
+        <div class="alert alert-info fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Limited time offer: </strong> Buy 3 Milk and get the 4th milk for free
+        </div>
+    </div>
+
+    <!-- Check out area
+    <div id="buttons" class="row ">
+        <div class= "col-sm-2">
+            <button id="reset" type="button" class="btn btn-default btn-md btn-block center-block">Clear Cart</button>
+        </div>
+        <div class= "col-sm-2" >
+            <button id="checkout" type="button" class="btn btn-success btn-lg btn-block center-block">Check Out</button>
+        </div>
+    </div> -->
+
+    <!-- Products area -->
+    <div class="row">
+        <div class= "col-sm-4" >
+            <div id= "butter">
+                <h1 class="center-text">Butter</h1>
+                <img src="lib/img/Butter.jpg" class="img-rounded" alt="Butter_img" width="304" height="236">
+                <h2>Price: £0.80</h2>
+                <p>Organic Butter.</p>
+                <button type="button" class="btn btn-primary center-block addToCart">Add To Cart</button>
+            </div>
+        </div>
+        <div class= "col-sm-4" >
+            <div id= "milk">
+                <h1 class="center-text">Milk</h1>
+                <img src="lib/img/milk.jpg" class="img-rounded" alt="Butter_img" width="150" height="236">
+                <h2>Price: £1.15</h2>
+                <p>Fresh milk.</p>
+                <button type="button" class="btn btn-primary center-block addToCart">Add To Cart</button>
+            </div>
+        </div>
+        <div class= "col-sm-4">
+            <div id = "bread">
+                <h1 class="center-text">Bread <span class="label label-success"></span></h1>
+                <img src="lib/img/bread_1807973b.jpg" class="img-rounded" alt="Butter_img" width="304" height="236">
+                <h2>Price: £1.00</h2>
+                <p>Fresh baked bread.</p>
+                <button type="button" class="btn btn-primary center-block addToCart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class = "panel panel-default pull-right ">
+        <div class = "panel-heading">Cart</div>
+        <div id=table></div>
+        <div id=pricearea>Empty Cart</div>
+        <hr>
+        <button id="reset" type="button" class="btn btn-default btn-md btn-block center-block">Clear Cart</button>
+        <button id="checkout" type="button" class="btn btn-success btn-lg btn-block center-block">Check Out</button>
+    </div>
+
+
+</div>
+<script type="text/javascript" src="lib/js/cart.js"></script>
+</body>
+</html>
